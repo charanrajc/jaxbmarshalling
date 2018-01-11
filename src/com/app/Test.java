@@ -15,7 +15,7 @@ public class Test
 		emp.setName("charan");
 		JAXBContext context = JAXBContext.newInstance(Employee.class);
 		Marshaller marshaller = context.createMarshaller();
-		File file=new File("D:aa.xml");
+		File file=new File("d:/employee.xsd");
 		marshaller.marshal(emp, file);
 		System.out.println("JAXB Marshaller sucessfully done");
 	}
